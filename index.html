@@ -34,4 +34,86 @@
       margin: 8px 0;
     }
     .card {
-      background: #fff; padding:
+      background: #fff; padding: 20px;
+      border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    footer {
+      background: #222; color: #fff;
+      text-align: center; padding: 15px;
+    }
+    .toggle-btn {
+      background: #444; color: #fff;
+      border: none; padding: 10px 15px;
+      cursor: pointer; border-radius: 5px;
+    }
+    .dark-mode {
+      background: #222; color: #eee;
+    }
+    .dark-mode header, .dark-mode footer {
+      background: #000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sakthi.C</h1>
+    <p>Engineering Student</p>
+    <button class="toggle-btn" onclick="toggleTheme()">Toggle Dark Mode</button>
+  </header>
+
+  <section>
+    <div class="card">
+      <h2>Personal Details</h2>
+      <p><strong>Phone:</strong> 8825804478</p>
+      <p><strong>Email:</strong> sakthichelladurai18@gmail.com</p>
+      <p><strong>Address:</strong> 504, Pillaiyar Kovil Street, Kalmadugu, Gudiyatham, Vellore.</p>
+    </div>
+
+    <div class="card">
+      <h2>About Me</h2>
+      <p>I am currently pursuing my engineering degree in computer science at Annai Mira College of Engineering and Technology. I am eager to learn new things that help me achieve my goals. My first step in my career began with Starvik Private Limited, which I believe will be a turning point in my journey.</p>
+    </div>
+
+    <div class="card">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>Fundamentals of C and C++</li>
+        <li>MS Office (Word, Excel, PowerPoint)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Education</h2>
+      <p><strong>2012 - 2025:</strong> National Higher Secondary School, Gudiyatham, Vellore (10th: 93%, 12th: 93%)</p>
+      <p><strong>2025 - Present:</strong> Annai Mira College of Engineering and Technology, Ranipet — BE in Computer Science and Engineering</p>
+    </div>
+
+    <div class="card">
+      <h2>Internships</h2>
+      <ul>
+        <li>Intern at Starvik Private Limited (Present)</li>
+        <li>Currently undergoing training and learning technical skills</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Strengths</h2>
+      <ul>
+        <li>Quick learner</li>
+        <li>Positive attitude</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Sakthi.C. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+</html>
